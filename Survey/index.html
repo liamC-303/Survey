@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Survey</title>
+  </head>
+  <header>
+    <h1 id="title">Music Survey</h1>
+    <br />
+    
+        <h2>Created by</h2>
+        <p>Liam Cawley</p>
+    <br>
+    <p id="descriotion">Thank you for filling out this survey</p>
+  </header>
+  <br />
+  <body>
+    <main>
+      <div id="form">
+        <form id="survey-form" method="POST">
+          <div id="firstn">
+            <div class="labels">
+              <label for="First Name">First Name:</label>
+            </div>
+            <div class="inputs">
+            <input type="text" id="First Name" placeholder="Liam" required />
+          </div>
+        </div>
+        <br />
+       
+       
+
+          <div id="LastN">
+            <div class="labels">
+                
+              <label for="Last Name">Last Name:</label>
+            </div>
+            <div class="inputs">
+            <input type="text" id="Last Name" placeholder="Cawley" required />
+          </div>
+        </div>
+        
+        <br>
+          <div id="Email">
+            <div class="labels">
+              <label for="email">Email:</label>
+            </div>
+            <div class="inputs">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@hotmail.com"
+              required
+            />
+          </div>
+          </div>
+
+          <br />
+          
+       
+          <div id="Number">
+            <div class="labels">
+                
+              <label for="Number">Mobile Number</label>
+            </div>
+            <div class="inputs">
+            <input
+              type="Text"
+              name="Number"
+              id="Number"
+              placeholder="077...."
+              required
+            />
+          </div>
+          </div>
+          <br />
+          
+       
+          <div id="age">
+            <div class="labels">
+              <label for="age">Please enter your age</label>
+            </div>
+            <div class="inputs">
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="1"
+              max="100"
+              placeholder="18"
+              required
+            />
+          </div>
+          </div>
+          <br />
+         
+          <div id="genre">
+            <div class="labels">
+              <label for="genre"
+                >What Music Genre is your Favourite of of these 4?</label
+              >
+            </div>
+            <div class="inputs">
+            <select name="Genre" id="genre">
+              <option disabled value selected>Select an option</option>
+              <option value="Techno">Techno</option>
+              <option value="House">House</option>
+              <option value="Pop">Pop</option>
+              <option value="Rock">Rock</option>
+            </select>
+          </div>
+          </div>
+
+          <br />
+         
+         
+       
+          
+
+        
+            <div class="labels">
+              <label>How many of the other genres do you listen to?</label>
+            </div>
+            <div class="inputs">
+            <label for="1">1</label>
+            <input type="radio" id="1" name="otherGenres"/>
+           
+            <label for="2">2</label>
+            <input type="radio" id="2" name="otherGenres"/>
+            
+            <label for="3">3</label>
+            <input type="radio" id="2"name="otherGenres" />
+         
+            <label for="All">All</label>
+            <input type="radio" id="All" name="otherGenres"/>
+            </div>
+          </div>
+        
+          <br />
+         
+        
+          <div id="textarea">
+            <div class="labels">
+              <label for="textarea"
+                >Who is your favourite artist in your choosen genre and
+                Why?</label
+              >
+            </div>
+            <br />
+            <div class="inputs">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+            </div>
+          </div>
+          <br />
+         
+          <div id="checkbox">
+            <div class="labels">
+              <label>Would you like to be contacted?</label>
+            </div>
+            <br />
+            <div class="inputs">
+            <label for="contacted">Yes</label>
+            <input type="checkbox" id="contacted" value="Yes" />
+        </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          
+        </form>
+        <div id="submit">
+          <button class="submit-button">Submit
+        </button>
+      </div>
+    </main>
+   
+  </body>
+ 
+</html>
